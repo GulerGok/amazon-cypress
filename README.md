@@ -69,24 +69,21 @@ module.exports = defineConfig({
 ```
 
 📦 Kullanılan Paketler
+```sql
 cypress
-
 @badeball/cypress-cucumber-preprocessor
-
 @shelex/cypress-allure-plugin
-
 allure-commandline
-
 @bahmutov/cypress-esbuild-preprocessor
-
 esbuild
+```
 
 ✅ Notlar
+```sql
 .feature dosyalarınızı cypress/e2e/ klasörüne yerleştirin.
-
 Allure çıktıları allure-results/ klasörüne kaydedilir.
-
 allure-results klasörü .gitignore içinde olmalıdır.
+```
 
 📃 Lisans
 MIT
