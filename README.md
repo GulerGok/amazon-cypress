@@ -11,27 +11,20 @@ npm install --legacy-peer-deps
 
 🚀 Testleri Çalıştır
 Tüm testleri terminal üzerinden çalıştırmak için:
-bash
-Kopyala
-Düzenle
+```sql
 npx cypress run
 Cypress GUI ile testleri çalıştırmak için:
-bash
-Kopyala
-Düzenle
+```
 npx cypress open
 
 📊 Allure Raporu Oluşturma
 Test çalıştıktan sonra Allure raporunu oluştur ve GUI ile görüntüle:
-bash
-Kopyala
-Düzenle
+```sql
 npx allure generate allure-results --clean && npx allure open
+```
 
 📁 Dosya Yapısı
-bash
-Kopyala
-Düzenle
+```sql
 project-root/
 │
 ├── cypress/
@@ -41,13 +34,12 @@ project-root/
 ├── allure-results/          # Allure test sonuçları
 ├── cypress.config.js        # Cypress ayarları
 └── package.json
+```
 
 ⚙️ Cypress Config
 cypress.config.js içeriği:
 
-js
-Kopyala
-Düzenle
+```sql
 const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
@@ -71,6 +63,7 @@ module.exports = defineConfig({
     },
   },
 });
+```
 
 📦 Kullanılan Paketler
 cypress
