@@ -6,17 +6,20 @@ Bu proje, **Cypress 11.2**, **Cucumber (BDD)** ve **Allure Raporlama** sistemler
 
 ### 1. Bağımlılıkları yükle
 
-```bash
+```sql
 npm install --legacy-peer-deps
+```
 
 🚀 Testleri Çalıştır
 Tüm testleri terminal üzerinden çalıştırmak için:
 ```sql
 npx cypress run
-Cypress GUI ile testleri çalıştırmak için:
 ```
-npx cypress open
 
+Cypress GUI ile testleri çalıştırmak için:
+```sql
+npx cypress open
+```
 📊 Allure Raporu Oluşturma
 Test çalıştıktan sonra Allure raporunu oluştur ve GUI ile görüntüle:
 ```sql
