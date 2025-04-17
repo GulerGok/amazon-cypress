@@ -10,6 +10,16 @@ Bu proje, **Cypress 11.2**, **Cucumber (BDD)** ve **Allure Raporlama** sistemler
 npm install --legacy-peer-deps
 ```
 
+📦 Kullanılan Paketler
+```sql
+npm install --save-dev cypress@11.2.0 --legacy-peer-deps
+npm install --save-dev @badeball/cypress-cucumber-preprocessor --legacy-peer-deps
+npm install --save-dev @bahmutov/cypress-esbuild-preprocessor --legacy-peer-deps
+npm install --save-dev esbuild --legacy-peer-deps
+npm install --save-dev @shelex/cypress-allure-plugin --legacy-peer-deps
+npm install --save-dev allure-commandline --legacy-peer-deps
+```
+
 🚀 Testleri Çalıştır
 Tüm testleri terminal üzerinden çalıştırmak için:
 ```sql
@@ -23,7 +33,7 @@ npx cypress open
 📊 Allure Raporu Oluşturma
 Test çalıştıktan sonra Allure raporunu oluştur ve GUI ile görüntüle:
 ```sql
-npx allure generate allure-results --clean && npx allure open
+npx allure generate allure-results --clean; npx allure open
 ```
 
 📁 Dosya Yapısı
@@ -66,16 +76,6 @@ module.exports = defineConfig({
     },
   },
 });
-```
-
-📦 Kullanılan Paketler
-```sql
-cypress
-@badeball/cypress-cucumber-preprocessor
-@shelex/cypress-allure-plugin
-allure-commandline
-@bahmutov/cypress-esbuild-preprocessor
-esbuild
 ```
 
 ✅ Notlar

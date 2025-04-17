@@ -8,26 +8,21 @@ module.exports = defineConfig({
   e2e: {
     specPattern: "cypress/e2e/**/*.feature",
     supportFile: "cypress/support/e2e.js",
-    baseUrl: "http://localhost:3000", // Projeye özel ayarlayabilirsin
+    baseUrl: "http://localhost:3000",
     env: {
       allureResultsPath: "allure-results",
     },
-    setupNodeEvents: async (on, config) => {
-      // Cucumber plugin entegrasyonu
-      await addCucumberPreprocessorPlugin(on, config);
-
-      // Esbuild preprocessor (Cucumber için)
-      on(
-        "file:preprocessor",
-        createBundler({
-          plugins: [createEsbuildPlugin(config)],
-        })
-      );
-
-      // Allure writer (rapor çıktısını kaydeder)
-      allureWriter(on, config);
-
-      return config;
+    setupNodeEvents(on, config) {
+      return addCucumberPreprocessorPlugin(on, config).then(() => {
+        on(
+          "file:preprocessor",
+          createBundler({
+            plugins: [createEsbuildPlugin(config)],
+          })
+        );
+        allureWriter(on, config);
+        return config;
+      });
     },
   },
 });

@@ -1,0 +1,4 @@
+"DESCRİPTİON","DURATİON İN MS","NAME","PARENT SUİTE","START TİME","STATUS","STOP TİME","SUB SUİTE","SUİTE","TEST CLASS","TEST METHOD"
+"","2941","Arama kutusuna ürün yaz","","Thu Apr 17 21:30:46 TRT 2025","passed","Thu Apr 17 21:30:48 TRT 2025","","Amazon Ürün Arama","",""
+"","1611","Ana sayfayı ziyaret et","","Thu Apr 17 21:30:44 TRT 2025","passed","Thu Apr 17 21:30:45 TRT 2025","","Amazon Ürün Arama","",""
+"","653","Arama sonuçlarını doğrula","","Thu Apr 17 21:30:48 TRT 2025","passed","Thu Apr 17 21:30:49 TRT 2025","","Amazon Ürün Arama","",""
